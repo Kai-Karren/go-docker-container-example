@@ -1,4 +1,4 @@
-FROM golang:1.17-bullseye AS build
+FROM golang:1.18 AS build
 
 WORKDIR /app
 
@@ -12,7 +12,7 @@ COPY *.go ./
 RUN go build -o /go-docker-container-example
 
 # Base image that only contains the necessary tools to run the application
-FROM gcr.io/distroless/base-debian10
+FROM gcr.io/distroless/base-debian11
 
 WORKDIR /
 
