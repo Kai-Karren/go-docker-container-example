@@ -14,8 +14,8 @@ The main point is the dockerfile. Replace the application name and you are ready
 
 As a reminder to build the image and to tag it run
 
-```
-docker build -t your_desrired_docker-image-name .
+```shell
+docker build -t your_desired_docker-image-name .
 ```
 
 That's it you are ready to go.
